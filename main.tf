@@ -2,7 +2,7 @@ terraform {
   required_providers {
     random = {
       source = "hashicorp/random"
-      version = "3.0.1"
+      version = "3.1.3"
     }
     null = {
       source = "hashicorp/null"
@@ -19,6 +19,7 @@ provider "null" {
 }
 
 resource "random_pet" "name" {
+  length = var.length
 }
 
 resource "null_resource" "hello" {
