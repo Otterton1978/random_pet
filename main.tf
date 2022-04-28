@@ -19,7 +19,7 @@ provider "null" {
 }
 
 resource "random_pet" "name" {
-  length = var.length
+  length = var.pet_name_length
 }
 
 resource "null_resource" "hello" {
